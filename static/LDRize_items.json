@@ -1,0 +1,132 @@
+[
+{
+  "name" : "セブンネットショッピング - 検索結果",
+  "data" : {
+    "domain"     : "^http://www\\.7netshopping\\.jp/[^/]+/search_result/", 
+    "paragraph"  : "//div[@name=\"product_group\"]", 
+    "link"       : ".//div[@class=\"title\"]/a"
+  }
+},
+{
+  "name" : "exciteブログ",
+  "data" : {
+    "domain"     : "^http://[^\\.]+\\.exblog\\.jp/", 
+    "paragraph"  : "//div[@class=\"post\"]", 
+    "link"       : ".//h2/a[@id]", 
+    "exampleUrl" : "http://ichimichi.exblog.jp/i4"
+  }
+},
+{
+  "name" : "ブクログ",
+  "data" : {
+    "domain"     : "^http://booklog\\.jp/users/", 
+    "paragraph"  : "//div[@class=\"article\"]", 
+    "link"       : ".//h2/a"
+  }
+},
+{
+  "name" : "Yahoo! 検索結果",
+  "data" : {
+    "domain"     : "^http://search\\.yahoo\\.co\\.jp/search\\?", 
+    "paragraph"  : "//div[@class=\"w\"]", 
+    "link"       : ".//h3/a", 
+    "exampleUrl" : "http://search.yahoo.co.jp/search?p=ldrize"
+  }
+},
+{
+  "name" : "はてなダイアリー・グループ",
+  "data" : {
+    "domain"     : "^http://(?:[^\\.]+\\.g|d)\\.hatena\\.ne\\.jp/", 
+    "paragraph"  : "//div[contains(concat(\" \", @class, \" \"), \" section \") and not(@id)]", 
+    "link"       : ".//h3/a[1]"
+  }
+},
+{
+  "name" : "はてなブログ",
+  "data" : {
+    "domain"     : "^http://[^\\.]+\\.hatenablog\\.com/", 
+    "paragraph"  : "//article", 
+    "link"       : ".//a[contains(concat(\" \", @class, \" \"), \" entry-title-link \")]", 
+    "exampleUrl" : "http://staff.hatenablog.com/"
+  }
+},
+{
+  "name" : "はてなハイク",
+  "data" : {
+    "domain"     : "^http://h\\.hatena\\.ne\\.jp/", 
+    "paragraph"  : "//div[contains(concat(\" \", @class, \" \"), \" entry \")]", 
+    "link"       : ".//a[time]"
+  }
+},
+{
+  "name" : "楽天ブックス",
+  "data" : {
+    "domain"     : "^http://search\\.books\\.rakuten\\.co\\.jp/", 
+    "paragraph"  : "//div[@class=\"contentsBox\"]", 
+    "link"       : ".//h2/a", 
+    "height"     : "80"
+  }
+},
+{
+   "name":"Google",
+	 "data" : { 
+			 "domain":"^https?://(www|encrypted)\\.(?:l\\.)?google\\.(?:[^.]+\\.)?[^./]+/",
+			 "paragraph":"id(\"res\")//div[contains(concat(\" \",normalize-space(@class),\" \"),\" g \")]|id(\"res\")//li[contains(concat(\" \",normalize-space(@class),\" \"),\" g \")]",
+			 "stripe":"1",
+			 "link":".//a",
+			 "exampleUrl":"http://www.google.com/"
+	 }
+},
+{
+  "name" : "Amazon.co.jp",
+  "data" : {
+    "domain"     : "^https?://www\\.amazon\\.co\\.jp/", 
+    "paragraph"  : "//div[starts-with(@id, \"result_\") or @class=\"zg_itemRow\"]", 
+    "link"       : ".//a[../@class=\"zg_title\" or parent::h3[@class=\"newaps\"]]", 
+    "exampleUrl" : "http://www.amazon.co.jp/gp/bestsellers/books/12075851/"
+  }
+},
+{
+  "name" : "honto",
+  "data" : {
+    "domain"     : "^http://honto\\.jp/(?:netstore/search|ranking/)", 
+    "paragraph"  : "//div[@class=\"stProduct02\"]", 
+    "link"       : ".//h2[@class=\"stHeading\"]/a", 
+    "exampleUrl" : "http://honto.jp/ranking/gr/bestseller_1101_1201_011.html"
+  }
+},
+{
+  "name" : "github",
+  "data" : {
+    "domain"     : "^https://github\\.com/(?:.+/)?search\\?", 
+    "paragraph"  : "//li[contains(concat(\" \", @class, \" \"), \" source \")] | //div[contains(concat(\" \", @class, \" \"), \" code-list-item \")]", 
+    "link"       : ".//h3/a | .//p[@class=\"title\"]/a", 
+    "exampleUrl" : "https://github.com/search?q=xyzzy"
+  }
+},
+{
+  "name" : "Gist",
+  "data" : {
+    "domain"     : "^https?://gist\\.github\\.com/", 
+    "paragraph"  : "//div[contains(concat(\" \", @class, \" \"), \" gist-item \")]", 
+    "link"       : ".//a[strong[@class=\"css-truncate-target\"]]"
+  }
+},
+{
+  "name" : "ヤフオク!",
+  "data" : {
+    "domain"     : "^http://(?:auctions\\.search|category\\.auctions)\\.yahoo\\.co\\.jp/", 
+    "paragraph"  : "//td[@class=\"a1\"] | //div[contains(concat(\" \", @class, \" \"), \" inner \")]/div[contains(concat(\" \", @class, \" \"), \" bd \")]", 
+    "link"       : ".//h3/a"
+  }
+},
+{
+  "name" : "オンライン書店e-hon",
+  "data" : {
+    "domain"     : "^http://www\\.e-hon\\.ne\\.jp/", 
+    "paragraph"  : "//div[@class=\"detail\"]", 
+    "link"       : ".//p[@class=\"title\"]/a", 
+    "exampleUrl" : "http://www.e-hon.ne.jp/bec/SB/MikanList?dcode=05&ccode=99&scode=99&listcnt=0&Genre_id=059999"
+  }
+}
+]

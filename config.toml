@@ -1,0 +1,20 @@
+languageCode = "en-us"
+contentdir = "content"
+publishdir = "public"
+builddrafts = false
+baseurl = "http://nekowasabi.github.io/"
+canonifyurls = true
+title = "lyricalie"
+tags = ["tags", "categories"]
+copyright = "Copyright (c) 2016, takets; all rights reserved."
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+[indexes]
+    category = "categories"
+    tag = "tags"
+[author]
+    name = "takets"
+    twitter = "takets"
