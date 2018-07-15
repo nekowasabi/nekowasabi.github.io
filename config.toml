@@ -6,6 +6,7 @@ baseurl = "http://nekowasabi.github.io/"
 canonifyurls = true
 title = "lyricalie"
 tags = ["tags", "categories"]
+googleAnalytics = "UA-7571688-2"
 copyright = "Copyright (c) 2016, takets; all rights reserved."
 
 [taxonomies]
@@ -18,3 +19,11 @@ copyright = "Copyright (c) 2016, takets; all rights reserved."
 [author]
     name = "takets"
     twitter = "takets"
+
+[outputs]
+home = [ "RSS", "HTML"]
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
