@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on lyricalie</title>
+    <link>https://nekowasabi.github.io/categories/</link>
+    <description>Recent content in Categories on lyricalie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2016, takets; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 15 Mar 2021 09:44:20 +0900</lastBuildDate><atom:link href="https://nekowasabi.github.io/categories/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>memo</title>
+      <link>https://nekowasabi.github.io/categories/memo/</link>
+      <pubDate>Mon, 15 Mar 2021 09:44:20 +0900</pubDate>
+      
+      <guid>https://nekowasabi.github.io/categories/memo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ss</title>
+      <link>https://nekowasabi.github.io/categories/ss/</link>
+      <pubDate>Sat, 19 Sep 2020 16:19:59 +0900</pubDate>
+      
+      <guid>https://nekowasabi.github.io/categories/ss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>suddenfiction</title>
+      <link>https://nekowasabi.github.io/categories/suddenfiction/</link>
+      <pubDate>Wed, 11 Jul 2018 19:47:31 +0900</pubDate>
+      
+      <guid>https://nekowasabi.github.io/categories/suddenfiction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://nekowasabi.github.io/categories/tech/</link>
+      <pubDate>Sat, 12 Aug 2017 11:37:26 +0900</pubDate>
+      
+      <guid>https://nekowasabi.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
