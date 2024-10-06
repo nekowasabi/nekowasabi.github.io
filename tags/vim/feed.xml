@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on lyricalie</title>
+    <link>https://nekowasabi.github.io/tags/vim/</link>
+    <description>Recent content in Vim on lyricalie</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2016, takets; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 12 Aug 2017 11:37:26 +0900</lastBuildDate>
+    <atom:link href="https://nekowasabi.github.io/tags/vim/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows版Kaoriya-gvimでneco-lookが動かないときに</title>
+      <link>https://nekowasabi.github.io/post/windows-kaoriya-vim-neco-look/</link>
+      <pubDate>Sat, 12 Aug 2017 11:37:26 +0900</pubDate>
+      <guid>https://nekowasabi.github.io/post/windows-kaoriya-vim-neco-look/</guid>
+      <description>&lt;p&gt;vimを使っていると、たまにneco-lookが動作しなくなる。&lt;br&gt;&#xA;Mac版だと発生せず、Windows版のkaoriya-vimのみで発生する。&lt;br&gt;&#xA;原因が特定できず、ある日突然使えなくなるため、たいそう難儀していた。&lt;/p&gt;&#xA;&lt;p&gt;neco-look, neocomplete.vim, lookのどれが悪いのだろうと疑っていた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;が。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;違った。原因はheadコマンドだった。&lt;/p&gt;&#xA;&lt;p&gt;Unix系OSなら当然の権利であるかのように入っているheadコマンドがWindowsには入っていない。だからエラーが発生していた。&lt;br&gt;&#xA;思い返してみるに、今まで動いていたのはmsys2, cygwin等の入っている環境を入れていたため&lt;strong&gt;結果として動いていた&lt;/strong&gt;だけだった。それが再インストールなどでパスからheadコマンドがなくなったとたんに動かなくなっていたのだ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;で。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;動かすには&lt;a href=&#34;http://unxutils.sourceforge.net/&#34;&gt;GNU utilities for Win32&lt;/a&gt; からhead.exeをパスが通っている場所に保存すればよろしい。&lt;br&gt;&#xA;lookは&lt;a href=&#34;https://github.com/machakann/lookURL&#34;&gt;ここ&lt;/a&gt; にあるソースからMINGWなりでビルドすればWindowsで使用できるlookができあがるので、同じくパスの通った場所へ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;※現在はneco-lookが修正されており、headは必要ないけれどもメモとして。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
