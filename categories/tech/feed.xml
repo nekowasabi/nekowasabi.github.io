@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on lyricalie</title>
+    <link>https://nekowasabi.github.io/categories/tech/</link>
+    <description>Recent content in Tech on lyricalie</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2016, takets; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 12 Aug 2017 11:37:26 +0900</lastBuildDate>
+    <atom:link href="https://nekowasabi.github.io/categories/tech/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows版Kaoriya-gvimでneco-lookが動かないときに</title>
+      <link>https://nekowasabi.github.io/post/windows-kaoriya-vim-neco-look/</link>
+      <pubDate>Sat, 12 Aug 2017 11:37:26 +0900</pubDate>
+      <guid>https://nekowasabi.github.io/post/windows-kaoriya-vim-neco-look/</guid>
+      <description>&lt;p&gt;vimを使っていると、たまにneco-lookが動作しなくなる。&lt;br&gt;&#xA;Mac版だと発生せず、Windows版のkaoriya-vimのみで発生する。&lt;br&gt;&#xA;原因が特定できず、ある日突然使えなくなるため、たいそう難儀していた。&lt;/p&gt;&#xA;&lt;p&gt;neco-look, neocomplete.vim, lookのどれが悪いのだろうと疑っていた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;が。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;違った。原因はheadコマンドだった。&lt;/p&gt;&#xA;&lt;p&gt;Unix系OSなら当然の権利であるかのように入っているheadコマンドがWindowsには入っていない。だからエラーが発生していた。&lt;br&gt;&#xA;思い返してみるに、今まで動いていたのはmsys2, cygwin等の入っている環境を入れていたため&lt;strong&gt;結果として動いていた&lt;/strong&gt;だけだった。それが再インストールなどでパスからheadコマンドがなくなったとたんに動かなくなっていたのだ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;で。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;動かすには&lt;a href=&#34;http://unxutils.sourceforge.net/&#34;&gt;GNU utilities for Win32&lt;/a&gt; からhead.exeをパスが通っている場所に保存すればよろしい。&lt;br&gt;&#xA;lookは&lt;a href=&#34;https://github.com/machakann/lookURL&#34;&gt;ここ&lt;/a&gt; にあるソースからMINGWなりでビルドすればWindowsで使用できるlookができあがるので、同じくパスの通った場所へ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;※現在はneco-lookが修正されており、headは必要ないけれどもメモとして。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>golang_toggl_zsh_tmux</title>
+      <link>https://nekowasabi.github.io/post/golang-toggl-zsh-tmux/</link>
+      <pubDate>Tue, 21 Feb 2017 06:14:50 +0900</pubDate>
+      <guid>https://nekowasabi.github.io/post/golang-toggl-zsh-tmux/</guid>
+      <description>&lt;p&gt;ちまちまいじっていたtoggl,  zsh,  tmuxの組み合わせが動くようになった。&lt;br&gt;&#xA;ターミナルからtogglでタイムトラッキング登録して、zshとtmuxのプロンプトで現在のタスクが表示される。&lt;br&gt;&#xA;タイムトラッキングは見返して再利用しないと意味がないので、次はここらへんを定期的にできる仕組みを考えたいところ。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>gp06l</title>
+      <link>https://nekowasabi.github.io/post/gp06l/</link>
+      <pubDate>Tue, 23 Jun 2015 10:00:13 +0900</pubDate>
+      <guid>https://nekowasabi.github.io/post/gp06l/</guid>
+      <description>&lt;p&gt;自分用のテック備忘録。&#xA;ネット速度の向上＆代金の節約大作戦。&lt;/p&gt;&#xA;&lt;h1 id=&#34;状況&#34;&gt;■状況&lt;/h1&gt;&#xA;&lt;p&gt;・Nexus5の通信環境はb-mobile（転送量無制限。しかし遅い）定額。&#xA;・Nexus5で使っていたEmobileのsim（LTE 5GB、快適な速度）が塩漬け。&#xA;・b-mobileの速度がやたらと遅い。&#xA;・最近、移動中に『安定して』大きめのデータを受け取ることが増えた。&lt;/p&gt;&#xA;&lt;h1 id=&#34;目的&#34;&gt;■目的&lt;/h1&gt;&#xA;&lt;p&gt;・Emobileのsimを使えるようにしたい。&#xA;・普段はb-mobile、b-mobileが遅いor速度がほしいときはEmobileと使い分けしたい。&#xA;　・速度と冗長性の確保&lt;/p&gt;&#xA;&lt;h1 id=&#34;案&#34;&gt;■案&lt;/h1&gt;&#xA;&lt;p&gt;・simフリーのスマートフォンまたはタブレットに挿してテザリング&#xA;　→タブレットはkindleマンガ読み用がほしいので、安いので妥協したくない。&#xA;・ダメだった。現実は非常である。&lt;/p&gt;&#xA;&lt;h1 id=&#34;対応&#34;&gt;■対応&lt;/h1&gt;&#xA;&lt;p&gt;・中古のEmobileのWifiルータ『GL06P』にEmobileのsimを挿してテザリング&#xA;本来はNECの売れ線Wifiルータを使うべき。&#xA;が、お値段が20000円オーバー。&#xA;一方Emobileの中古ルータは5000円ほど。ヤクオクにも大量にあり、バッテリー交換もお安い。&#xA;なによりもインターネット上に大量の情報がある、実績のある機種であることが大きい。&#xA;他にもGL01Pなどの機種もあるが、バッテリー保ちに難があることや、LTEなのに3Gでしか接続ができない。&#xA;上記の検討の結果、GL06Pをお買い上げ。&lt;/p&gt;&#xA;&lt;h1 id=&#34;トラブル&#34;&gt;■トラブル&lt;/h1&gt;&#xA;&lt;p&gt;・初期設定（APN）ができねえ。&#xA;このルータは無線LANで接続して、内部ネットワークを介してブラウザ上で設定を行う。&#xA;しかし、設定画面に接続できない。&#xA;pingは通る、しかしnslookupで確認しようとするとコケる。&#xA;emobile製のルータとsimでなんで接続できないのが謎だと原因究明。&#xA;試行錯誤。2時間経過。心が折れる。&#xA;しばらく放心して、ふと気づく。&#xA;今、設定はMacで行っている。&#xA;これ、動作実績が大量にあるWindowsでやったらどうなるんだろう。&#xA;Windowsで試す。&#xA;一発接続、APNの設定もあっさり。インターネットにも接続可能となる。&#xA;ここまでWindowsで確認して、おそるおそるMacで無線LAN接続。&#xA;あっさりインターネットにつながった。ミッションコンプリート。&lt;/p&gt;&#xA;&lt;h1 id=&#34;結果&#34;&gt;■結果&lt;/h1&gt;&#xA;&lt;p&gt;・目的は完全に達成。&#xA;・高速で快適、月2500円を垂れ流していたのを有効活用するのに成功。&lt;/p&gt;&#xA;&lt;h1 id=&#34;モバイル通信費月額通話込み&#34;&gt;■モバイル通信費（月額・通話込み）&lt;/h1&gt;&#xA;&lt;p&gt;・現在の通信費は以下&#xA;　・auのガラケー／1200円（ほぼ通話専用）&#xA;　・b-mobile定額／1950円（通信専用）&#xA;　・emobile／2500円（塩漬け→通信用）&#xA;→計／月5650円&#xA;問題はemobile。通話回線が含まれているため、転送量5GBで2500円。高い。&#xA;一年前ならともかく、今はMVNOがいくらでもある。&#xA;とりあえずDMM mobile 3GBに変更したとすると、以下となる。&lt;/p&gt;&#xA;&lt;p&gt;・変更後の月額通信費（月額・通話込み）&#xA;　・auのガラケー／1200円（ほぼ通話専用）&#xA;　・b-mobile定額／1950円（データ通信専用sim）&#xA;　・DMM mobile ／850円（データ通信専用sim・Wifiルータ用）&#xA;→計／月4000円&lt;/p&gt;&#xA;&lt;p&gt;この構成のいいところは、b-mobileとDMM mobileはデータ通信専用simのため&#xA;『解約しても違約金がかからない』こと。&#xA;もっといいサービスが出たらほいほい乗り換えることができる。&lt;/p&gt;&#xA;&lt;h1 id=&#34;技術メモ&#34;&gt;■技術メモ&lt;/h1&gt;&#xA;&lt;p&gt;・ネットワーク系、ドライバがからむ設定について、Macはゴミ。&#xA;・動作実績が大量にあり、こなれたドライバがあるWindows最高。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
